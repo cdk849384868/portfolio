@@ -1,15 +1,17 @@
-# Jeremy Chen Portfolio
+# Jeremy Chen Portfolio - Editor Style
 
-Static GitHub Pages build of Jeremy Chen's bilingual level and system design portfolio.
+Static GitHub Pages portfolio using an authorized adaptation of the interaction structure from `shikamaru0922/HxH_portfolio`.
 
-## Publish with GitHub Pages
+## Upload
 
-1. Upload every file and folder in this package to the root of the `portfolio` repository.
-2. In the repository, open **Settings > Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder, then save.
+Delete the old generated `assets` folder and replace the repository root files with the contents of this package:
 
-The initial site address will be:
+- `index.html`
+- `style.css`
+- `fx.js`
+- `nav-boost.js`
+- `favicon.svg`
+- `.nojekyll`
 
-`https://cdk849384868.github.io/portfolio/`
+GitHub Pages remains configured as `main` / `/ (root)`.
 
