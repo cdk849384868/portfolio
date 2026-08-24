@@ -7,8 +7,8 @@
   bar.id = '__nav_progress';
   bar.style.cssText = [
     'position:fixed', 'top:0', 'left:0', 'height:3px', 'width:0',
-    'background:linear-gradient(90deg,#ff6b35,#ffa270,#ff6b35)',
-    'box-shadow:0 0 10px rgba(255,107,53,.7)',
+    'background:linear-gradient(90deg,#c5ff3d,#e4ff8a,#c5ff3d)',
+    'box-shadow:0 0 10px rgba(197,255,61,.7)',
     'z-index:99999',
     'transition:width .3s ease, opacity .25s ease',
     'opacity:0', 'pointer-events:none'

@@ -542,7 +542,7 @@
         '%c HXH.DESIGN %c 关卡设计师的作品集，本身也该是个关卡。\n' +
         '隐藏机制：↑↑↓↓←→←→BA 或连点左上角 logo ×5 → 白盒模式\n' +
         '也可以直接调用 __whitebox()',
-        'background:#ff6b35;color:#0a0a0f;font-weight:bold;padding:4px 8px;border-radius:3px',
+        'background:#c5ff3d;color:#0a0a0f;font-weight:bold;padding:4px 8px;border-radius:3px',
         'color:#2fd6bd;line-height:1.8'
       );
     } catch (e) {}
