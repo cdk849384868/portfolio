@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.classList.add('fx')</script>
+<title>时光遗迹｜陈鼎康关卡设计</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body class="detail-body">
+<nav class="detail-nav">
+<a class="nav-logo" href="index.html">JEREMY.design</a>
+<ul class="nav-links">
+<li>
+<a href="#overview">概览</a>
+</li>
+<li>
+<a href="#mechanics">机制</a>
+</li>
+<li>
+<a href="#flow">流程</a>
+</li>
+<li>
+<a href="#reflection">设计判断</a>
+</li>
+</ul>
+</nav>
+<header class="detail-hero">
+<div>
+<div class="detail-kicker">LEVEL DESIGN CASE STUDY · 01</div>
+<h1 class="detail-title">时光遗迹</h1>
+<p class="detail-lead">围绕“教学—挑战—奖励”建立10分钟第三人称线性箱庭体验，以时停、近战和平台跳跃构成复合玩法。</p>
+<div class="detail-actions">
+<a class="project-link" href="https://www.bilibili.com/video/BV1FjAozSE37/" target="_blank">观看实机 ↗</a>
+<a class="project-link" href="https://docs.qq.com/doc/DVWtwZXpOTEhWVGx0" target="_blank">原始关卡文档 ↗</a>
+</div>
+</div>
+<figure class="detail-cover">
+<img src="images/projects/time-ruins-cover.png" alt="时光遗迹">
+</figure>
+</header>
+<main class="detail-main">
+<div class="detail-meta">
+<div>
+<span>ROLE</span>
+<strong>关卡策划</strong>
+</div>
+<div>
+<span>ENGINE</span>
+<strong>Unreal Engine 5</strong>
+</div>
+<div>
+<span>TYPE</span>
+<strong>3D动作冒险 / ARPG</strong>
+</div>
+<div>
+<span>DURATION</span>
+<strong>10分钟 · 4层</strong>
+</div>
+</div>
+<section class="detail-section" id="overview">
+<div class="detail-index">00 · OVERVIEW</div>
+<h2>体验目标</h2>
+<p>玩家以点亮时空水晶为目标，在清晰方向感下学习并组合核心能力。设计重点不是单点机关，而是把探索收集、平台解谜与战斗压力组织成有呼吸感的连续体验。</p>
+<div class="detail-quote">高压的战斗与平台解谜，和低压的探索收集交替出现，让玩家持续获得方向、挑战和回报。</div>
+</section>
+<section class="detail-section" id="mechanics">
+<div class="detail-index">01 · CORE MECHANICS</div>
+<h2>复合玩法框架</h2>
+<div class="detail-grid">
+<article class="detail-panel">
+<b>M01</b>
+<h3>时停机关</h3>
+<p>冻结旋转或往返平台，制造安全窗口；玩家先观察运动规律，再决定时停时机与通过路线。</p>
+</article>
+<article class="detail-panel">
+<b>M02</b>
+<h3>近战打断</h3>
+<p>把时停从移动平台延伸到战斗语境，用于控制威胁、创造近战输出窗口。</p>
+</article>
+<article class="detail-panel">
+<b>M03</b>
+<h3>平台跳跃</h3>
+<p>通过高低差、落点预览与空间地标降低迷失感，使操作挑战建立在明确意图之上。</p>
+</article>
+</div>
+</section>
+<section class="detail-section" id="flow">
+<div class="detail-index">02 · EXPERIENCE FLOW</div>
+<h2>教学—挑战—奖励</h2>
+<ol class="detail-list">
+<li>
+<strong>教学：</strong>在低风险环境中识别时空水晶与时停目标。</li>
+<li>
+<strong>单项验证：</strong>用时停通过动态平台，建立“观察—冻结—行动”的操作循环。</li>
+<li>
+<strong>复合挑战：</strong>将平台移动、敌人威胁与近战窗口叠加。</li>
+<li>
+<strong>节奏释放：</strong>进入低压探索段，寻找时空石并重新建立方向感。</li>
+<li>
+<strong>综合考验：</strong>在最终区域连续调用已学规则，完成收集闭环。</li>
+</ol>
+<div class="detail-gallery">
+<figure>
+<img src="images/projects/ldd/ruins-flow.webp" alt="时光遗迹完整逻辑流程图">
+<figcaption>FLOW & PACING · 关卡逻辑流程</figcaption>
+</figure>
+<figure>
+<img src="images/projects/ldd/ruins-overview.webp" alt="时光遗迹关卡俯视图与动线">
+<figcaption>LEVEL OVERVIEW · 俯视结构与动线</figcaption>
+</figure>
+</div>
+</section>
+<section class="detail-section" id="reflection">
+<div class="detail-index">03 · DESIGN DECISIONS</div>
+<h2>关卡设计判断</h2>
+<div class="detail-grid">
+<article class="detail-panel">
+<h3>空间先于装饰</h3>
+<p>用结构、视线与地标保证玩家能读懂下一步，而非依赖强制UI箭头。</p>
+</article>
+<article class="detail-panel">
+<h3>机制逐步组合</h3>
+<p>先单独教学，再改变条件，最后与战斗叠加，避免一次性倾倒全部规则。</p>
+</article>
+<article class="detail-panel">
+<h3>用节奏控制认知负荷</h3>
+<p>挑战后安排探索与奖励，让玩家消化新规则并准备进入下一轮压力。</p>
+</article>
+</div>
+</section>
+<section class="detail-section" id="rules">
+<div class="detail-index">04 · RULE SYSTEM</div><h2>时停规则与机关组合</h2>
+<p>点亮第一颗时空水晶后解锁时停。按键5发射时光能量弹：机关冻结7秒，再次命中重置倒计时；敌人冻结7秒并受到20点伤害，同一时间只能冻结一名敌人。</p>
+<div class="metric-strip"><span>3颗时空水晶</span><span>7秒机关时停</span><span>7秒敌人控制</span><span>单目标限制</span><span>死亡回溯至上一水晶</span></div>
+<div class="detail-grid"><article class="detail-panel"><b>BASE</b><h3>往返 / 旋转机关</h3><p>玩家观察轴向运动和旋转轨迹，通过时停主动创造落脚点。</p></article><article class="detail-panel"><b>VARIANT</b><h3>感应石联动</h3><p>踩踏对应机关使感应石升起，再冻结石体，把两步操作组合为连续跳跃。</p></article><article class="detail-panel"><b>COLLECTION</b><h3>时空石与屏障</h3><p>互动机关附近藏有时空石；收集达到要求后解除屏障、开放电梯与下一层。</p></article></div>
+</section>
+<section class="detail-section" id="layout"><div class="detail-index">05 · FOUR-LAYER LAYOUT</div><h2>四层递进结构</h2>
+<div class="act-list"><div class="act-row"><b>1F · 教学</b><div><h3>建立基本规则</h3><p>基础战斗、时停机关和视觉引导，让玩家形成“瞄准—冻结—行动”的操作模型。</p></div></div><div class="act-row"><b>2F · 组合</b><div><h3>往返＋旋转</h3><p>把独立机关组合成连续窗口，要求玩家在有限时间内规划下一次时停。</p></div></div><div class="act-row"><b>3F · 变种</b><div><h3>感应石＋复杂跳跃</h3><p>加入机关联动与更高垂直复杂度，同时利用POI保持方向感。</p></div></div><div class="act-row"><b>4F · 终局</b><div><h3>战斗强化＋终极谜题</h3><p>用掩体、远近敌人与时停控制交替组织战斗和解谜压力。</p></div></div></div>
+<div class="detail-gallery four contain"><figure><img src="images/projects/ldd/ruins-route-l1.webp" alt="时光遗迹一层动线"><figcaption>1F ROUTE</figcaption></figure><figure><img src="images/projects/ldd/ruins-route-l2-4.webp" alt="时光遗迹二至四层动线"><figcaption>2F—4F ROUTE</figcaption></figure></div></section>
+</main>
+<div class="back-strip">
+<a href="index.html#projects">← 返回核心项目</a>
+</div>
+<script src="fx.js" defer>
+</script>
+<script src="nav-boost.js" defer>
+</script>
+</body>
+</html>

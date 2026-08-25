@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.classList.add('fx')</script>
+<title>时空神殿｜陈鼎康关卡设计</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body class="detail-body">
+<nav class="detail-nav">
+<a class="nav-logo" href="index.html">JEREMY.design</a>
+<ul class="nav-links">
+<li>
+<a href="#upgrade">迭代</a>
+</li>
+<li>
+<a href="#space">空间</a>
+</li>
+<li>
+<a href="#mechanics">机制</a>
+</li>
+<li>
+<a href="#acts">节奏</a>
+</li>
+</ul>
+</nav>
+<header class="detail-hero">
+<div>
+<div class="detail-kicker">LEVEL DESIGN CASE STUDY · 02</div>
+<h1 class="detail-title">时空神殿</h1>
+<p class="detail-lead">从线性玩法验证升级为多层半开放箱庭：9颗时空水晶、垂直探索、捷径回路与动态能力解锁。</p>
+<div class="detail-actions">
+<a class="project-link" href="https://www.bilibili.com/video/BV1iAwSzHEgE/" target="_blank">观看实机 ↗</a>
+<a class="project-link" href="https://docs.qq.com/doc/DVW1hVU1nQ1d6SnhF" target="_blank">原始关卡文档 ↗</a>
+</div>
+</div>
+<figure class="detail-cover">
+<img src="images/projects/time-temple-cover.png" alt="时空神殿">
+</figure>
+</header>
+<main class="detail-main">
+<div class="detail-meta">
+<div>
+<span>ROLE</span>
+<strong>关卡策划</strong>
+</div>
+<div>
+<span>ENGINE</span>
+<strong>Unreal Engine 5</strong>
+</div>
+<div>
+<span>STRUCTURE</span>
+<strong>20分钟 · 半开放箱庭</strong>
+</div>
+<div>
+<span>OBJECTIVES</span>
+<strong>9颗时空水晶</strong>
+</div>
+</div>
+<section class="detail-section" id="upgrade">
+<div class="detail-index">00 · ITERATION</div>
+<h2>从线性验证到箱庭架构</h2>
+<p>保留《时光遗迹》中已经跑通的“教学—挑战—奖励”循环，把单一路径升级为包含多层结构、支路探索和捷径连通的半开放关卡。玩家不只执行流程，而是在读懂空间后主动规划路线。</p>
+<div class="detail-quote">迭代的核心不是单纯放大地图，而是让玩家获得路线选择、空间记忆和能力成长。</div>
+</section>
+<section class="detail-section" id="space">
+<div class="detail-index">01 · SPATIAL STRUCTURE</div>
+<h2>多层空间与非线性探索</h2>
+<div class="detail-grid">
+<article class="detail-panel">
+<b>S01</b>
+<h3>垂直分层</h3>
+<p>利用高低差建立区域层级，让远处目标可见、抵达方式暂时未知，形成探索动机。</p>
+</article>
+<article class="detail-panel">
+<b>S02</b>
+<h3>POI引导</h3>
+<p>以强视觉地标和水晶目标管理视线，让玩家在开放路径中始终保有宏观方向。</p>
+</article>
+<article class="detail-panel">
+<b>S03</b>
+<h3>捷径回路</h3>
+<p>通过重新连通已探索区域，压缩返程成本，并把“我在哪里”转化为空间记忆奖励。</p>
+</article>
+</div>
+<div class="detail-gallery">
+<figure>
+<img src="images/projects/time-temple-layout.png" alt="时空神殿整体空间">
+<figcaption>LEVEL OVERVIEW · 整体空间结构</figcaption>
+</figure>
+<figure>
+<img src="images/projects/ldd/temple-blockout.webp" alt="白盒迭代" onerror="this.parentElement.classList.add('missing');this.remove()">
+<figcaption>BLOCKOUT ITERATION · 待补充项目图</figcaption>
+</figure>
+</div>
+</section>
+<section class="detail-section" id="mechanics">
+<div class="detail-index">02 · MECHANIC DEPTH</div>
+<h2>时停机制的动态解锁</h2>
+<p>前期时停主要作用于旋转齿轮与往返平台，帮助玩家建立环境解谜规则。随着救出NPC和叙事推进，目标范围扩展到高威胁敌人，使同一能力进入战斗策略层。</p>
+<div class="detail-grid">
+<article class="detail-panel">
+<h3>环境操控</h3>
+<p>冻结动态机关，改变通过窗口和平台关系。</p>
+</article>
+<article class="detail-panel">
+<h3>高难跳跃</h3>
+<p>先规划空间与时机，再执行连续移动。</p>
+</article>
+<article class="detail-panel">
+<h3>战斗打断</h3>
+<p>冻结高威胁敌人或打断施法，创造策略窗口。</p>
+</article>
+</div>
+</section>
+<section class="detail-section" id="acts">
+<div class="detail-index">03 · FOUR ACTS</div>
+<h2>四幕体验节奏</h2>
+<ol class="detail-list">
+<li>
+<strong>启蒙：</strong>建立水晶目标、时停输入与基础环境规则。</li>
+<li>
+<strong>探索：</strong>开放多层路线，通过POI、支路与捷径形成空间认知。</li>
+<li>
+<strong>能力质变：</strong>救出NPC后扩展时停对象，机制从解谜工具变成战斗策略。</li>
+<li>
+<strong>终极考验：</strong>综合路线判断、跳跃执行、机关操控与高威胁战斗。</li>
+</ol>
+</section>
+<section class="detail-section" id="rules"><div class="detail-index">04 · SYSTEM RULES</div><h2>一套输入连接解谜与战斗</h2>
+<p>玩家点亮水晶后使用时空弹。前期只冻结环境机关5秒；救出奥古斯丁后解锁敌人时停，冻结敌人7秒并造成20点伤害，同一时间仅能控制一个目标。死亡则回溯至最近点亮的水晶。</p>
+<div class="metric-strip"><span>9颗水晶 / 存档点</span><span>环境冻结5秒</span><span>敌人冻结7秒</span><span>20点伤害</span><span>单目标控制</span></div>
+<div class="detail-grid"><article class="detail-panel"><h3>可复用机关</h3><p>往返平台、旋转平台、感应石、电梯、屏障与时空石构成基础词汇。</p></article><article class="detail-panel"><h3>组合难度</h3><p>旋转＋往返＋感应石叠加，要求多次时停和连续落点规划。</p></article><article class="detail-panel"><h3>敌人压力</h3><p>剑盾战士与手枪/步枪枪手组合，用掩体和射线压力改变时停优先级。</p></article></div></section>
+<section class="detail-section" id="visual-flow"><div class="detail-index">05 · DOCUMENTED FLOW</div><h2>四幕流程与代表性场景</h2>
+<div class="detail-gallery wide contain"><figure><img src="images/projects/ldd/temple-flow.webp" alt="时空神殿完整节奏流程图"><figcaption>MACRO FLOW · 20分钟节奏规划</figcaption></figure></div>
+<div class="act-list"><div class="act-row"><b>ACT 01</b><div><h3>启程与能力觉醒</h3><p>山脚小镇建立世界观与主水晶POI；小教堂解锁环境时停；上山路以狭窄到开阔的空间反差制造神殿初见。</p></div></div><div class="act-row"><b>ACT 02</b><div><h3>空间探索与机制验证</h3><p>大门战完成压力校验，侧殿教授齿轮与踩踏机关；大厅从线性转为半开放枢纽。</p></div></div><div class="act-row"><b>ACT 03</b><div><h3>叙事反转与能力质变</h3><p>二楼进阶跳跃后救出奥古斯丁，解锁时停敌人并打开通往三楼的捷径。</p></div></div><div class="act-row"><b>ACT 04</b><div><h3>综合运用与收束</h3><p>城墙战展示空间尺度，三楼房间进行极限校验，顶楼长廊融合环境时停和敌人控场，最终点亮第9颗水晶。</p></div></div></div>
+<div class="detail-gallery four"><figure><img src="images/projects/ldd/temple-town.webp" alt="山脚小镇"><figcaption>ACT 01 · 山脚小镇</figcaption></figure><figure><img src="images/projects/ldd/temple-church.webp" alt="小教堂"><figcaption>ACT 01 · 小教堂机制解锁</figcaption></figure><figure><img src="images/projects/ldd/temple-ascent.webp" alt="上山路"><figcaption>ACT 01 · 欲扬先抑的上山路</figcaption></figure><figure><img src="images/projects/ldd/temple-gate.webp" alt="神殿大门战"><figcaption>ACT 02 · 神殿大门战</figcaption></figure><figure><img src="images/projects/ldd/temple-hall.webp" alt="神殿大厅"><figcaption>ACT 02 · 半开放大厅枢纽</figcaption></figure><figure><img src="images/projects/ldd/temple-mage.webp" alt="救出奥古斯丁"><figcaption>ACT 03 · 能力质变节点</figcaption></figure><figure><img src="images/projects/ldd/temple-wall.webp" alt="城墙回望"><figcaption>ACT 04 · 回望与空间成就</figcaption></figure><figure><img src="images/projects/ldd/temple-finale.webp" alt="顶楼长廊"><figcaption>ACT 04 · 终局综合考验</figcaption></figure></div></section>
+<section class="detail-section" id="maps"><div class="detail-index">06 · LEVEL MAPS</div><h2>整体与分层动线</h2><p>黄—橙—深橙—紫对应由低到高的四层结构。各层通过大厅、阳台、侧殿和捷径建立空间关系，神殿顶层主水晶持续作为绝对地标。</p><div class="detail-gallery four contain"><figure><img src="images/projects/ldd/temple-overview.webp" alt="时空神殿整体俯视"><figcaption>OVERALL WHITEBOX</figcaption></figure><figure><img src="images/projects/ldd/temple-route-overall.webp" alt="总体动线"><figcaption>FULL ROUTE</figcaption></figure><figure><img src="images/projects/ldd/temple-route-l1.webp" alt="一层动线"><figcaption>LEVEL 01</figcaption></figure><figure><img src="images/projects/ldd/temple-route-l2.webp" alt="二层动线"><figcaption>LEVEL 02</figcaption></figure><figure><img src="images/projects/ldd/temple-route-l3.webp" alt="三层动线"><figcaption>LEVEL 03</figcaption></figure><figure><img src="images/projects/ldd/temple-route-l4.webp" alt="四层动线"><figcaption>LEVEL 04</figcaption></figure></div></section>
+<section class="detail-section" id="why"><div class="detail-index">07 · WHY IT WORKS</div><h2>主动掌控感</h2><p>项目把传统“等待平台、寻找拉杆”的被动过程，转换为“瞄准—射击—自己造路”的主动动作。水晶材质统一标记可控对象，同一发时空弹打机关用于跑酷解谜，打敌人用于战斗控场，让一套规则自然贯穿两类体验。</p><div class="detail-gallery wide"><figure><img src="images/projects/ldd/temple-ending.webp" alt="时空神殿最终水晶"><figcaption>TIME RESTART · 点亮第9颗水晶</figcaption></figure></div></section>
+</main>
+<div class="back-strip">
+<a href="index.html#projects">← 返回核心项目</a>
+</div>
+<script src="fx.js" defer>
+</script>
+<script src="nav-boost.js" defer>
+</script>
+</body>
+</html>

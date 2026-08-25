@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.classList.add('fx')</script>
+<title>情绪魔法学院｜陈鼎康关卡设计</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body class="detail-body">
+<nav class="detail-nav">
+<a class="nav-logo" href="index.html">JEREMY.design</a>
+<ul class="nav-links">
+<li>
+<a href="#goal">目标</a>
+</li>
+<li>
+<a href="#states">状态</a>
+</li>
+<li>
+<a href="#level">关卡</a>
+</li>
+<li>
+<a href="#design">设计</a>
+</li>
+</ul>
+</nav>
+<header class="detail-hero">
+<div>
+<div class="detail-kicker">LEVEL DESIGN CASE STUDY · 03</div>
+<h1 class="detail-title">情绪魔法学院</h1>
+<p class="detail-lead">用“双情绪魔法转换”把角色性能、动作战斗与数值解谜连接起来，让状态选择成为空间判断。</p>
+<div class="detail-actions">
+<a class="project-link" href="https://www.bilibili.com/video/BV1nePEz2Eyr/" target="_blank">观看实机 ↗</a>
+<a class="project-link" href="https://docs.qq.com/doc/DVXpaRmZCTEVSRWNH" target="_blank">原始关卡文档 ↗</a>
+</div>
+</div>
+<figure class="detail-cover">
+<img src="images/projects/emotion-academy-cover.png" alt="情绪魔法学院">
+</figure>
+</header>
+<main class="detail-main">
+<div class="detail-meta">
+<div>
+<span>ROLE</span>
+<strong>关卡策划 / 3C设计</strong>
+</div>
+<div>
+<span>ENGINE</span>
+<strong>Unreal Engine 5</strong>
+</div>
+<div>
+<span>TYPE</span>
+<strong>15分30秒 · 线性箱庭</strong>
+</div>
+<div>
+<span>CORE</span>
+<strong>双情绪状态</strong>
+</div>
+</div>
+<section class="detail-section" id="goal">
+<div class="detail-index">00 · EXPERIENCE GOAL</div>
+<h2>状态不是Buff，而是选择</h2>
+<p>玩家通过攻击或解谜行为改变情绪阈值，在“愤怒”和“冷静”之间转换。两种状态各自带来优势与代价，玩家需要根据空间、敌人和机关信息决定当前更需要哪一种性能。</p>
+<div class="detail-quote">把数值变化变成可感知的空间规则：不同情绪，让玩家看见不同机会，也承担不同风险。</div>
+</section>
+<section class="detail-section" id="states">
+<div class="detail-index">01 · DYNAMIC 3C</div>
+<h2>双情绪3C机制</h2>
+<div class="detail-grid">
+<article class="detail-panel">
+<b>STATE A</b>
+<h3>愤怒 · Angry</h3>
+<p>高伤害但控制感更弱，适合快速解决战斗威胁；强化力量感，同时提高失误风险。</p>
+</article>
+<article class="detail-panel">
+<b>STATE B</b>
+<h3>冷静 · Calm</h3>
+<p>输出较低，但能够显影隐藏机关与路径，更适合读取环境、规划路线和处理谜题。</p>
+</article>
+<article class="detail-panel">
+<b>TRANSITION</b>
+<h3>动态博弈</h3>
+<p>通过行为改变情绪值，避免状态切换成为无成本按钮，使战斗与解谜共享同一资源决策。</p>
+</article>
+</div>
+</section>
+<section class="detail-section" id="level">
+<div class="detail-index">02 · LEVEL STRUCTURE</div>
+<h2>战斗区与解谜区交汇</h2>
+<p>独立完成第三人称线性箱庭白盒。空间不把战斗和解谜完全切开，而是在过渡区域让两种需求同时出现：玩家可能需要愤怒清除敌人，却又需要冷静发现隐藏机关，由此形成状态规划。</p>
+<div class="detail-gallery">
+<figure>
+<img src="images/projects/ldd/emotion-flow.webp" alt="情绪魔法学院逻辑流程">
+<figcaption>FLOW · 关卡逻辑流程</figcaption>
+</figure>
+<figure>
+<img src="images/projects/ldd/emotion-route.webp" alt="情绪魔法学院俯视动线图">
+<figcaption>COMBAT × PUZZLE · 俯视动线分布</figcaption>
+</figure>
+</div>
+</section>
+<section class="detail-section" id="design">
+<div class="detail-index">03 · DESIGN PRINCIPLES</div>
+<h2>三个设计重点</h2>
+<div class="detail-grid">
+<article class="detail-panel">
+<h3>状态可读性</h3>
+<p>用角色反馈、环境显隐和性能差异，让玩家随时知道当前状态及其意义。</p>
+</article>
+<article class="detail-panel">
+<h3>空间推动选择</h3>
+<p>通过敌人布置、隐藏路径和机关信息，让转换来自场景需求而不是UI提示。</p>
+</article>
+<article class="detail-panel">
+<h3>风险与收益对称</h3>
+<p>愤怒更强但更难控制，冷静更安全但输出不足，避免出现永久最优状态。</p>
+</article>
+</div>
+</section>
+<section class="detail-section" id="state-table"><div class="detail-index">04 · STATE MATRIX</div><h2>情绪数值与可见性规则</h2>
+<table class="rule-table"><thead><tr><th>状态</th><th>区间</th><th>角色能力</th><th>空间与交互</th></tr></thead><tbody><tr><td><strong>冷静</strong></td><td>0.0—0.3</td><td>宽广视野、攻击降低、冰冻术</td><td>可看见并互动“冷静”标签的隐藏平台与机关</td></tr><tr><td><strong>平衡</strong></td><td>0.3—0.7</td><td>基础移动与战斗</td><td>看不见隐藏机关但保留碰撞，可使用常规机关</td></tr><tr><td><strong>愤怒</strong></td><td>0.7—1.0</td><td>双倍攻击、火球术、移速提高、视野缩小</td><td>隐藏平台不可见且无碰撞；可烧毁藤蔓和攻击红宝石弱点</td></tr></tbody></table>
+<p class="detail-quote">情绪达到0或1后进入20秒危险倒计时；玩家必须通过战斗、机关或能量来源将情绪拉回安全区。</p></section>
+<section class="detail-section" id="loop"><div class="detail-index">05 · EMOTION LOOP</div><h2>行为本身改变关卡资源</h2>
+<div class="detail-grid"><article class="detail-panel"><b>ANGRY LOOP</b><h3>战斗推动愤怒</h3><p>每次近战攻击提高情绪值；高情绪提高伤害并解锁火球，但也缩小视野并逼近失控。</p></article><article class="detail-panel"><b>CALM LOOP</b><h3>解谜推动冷静</h3><p>机关互动降低情绪值；冷静显影隐藏结构并允许冰冻交互，但会降低战斗输出。</p></article><article class="detail-panel"><b>RECOVERY</b><h3>恢复平衡</h3><p>祭坛直接调整至0.3/0.7，魔法树回到0.5；三颗魔法球最终解锁冷静、平衡、愤怒快捷切换。</p></article></div></section>
+<section class="detail-section" id="apparatus"><div class="detail-index">06 · PUZZLE VOCABULARY</div><h2>机关与难度变种</h2><div class="detail-grid"><article class="detail-panel"><h3>旋转桥</h3><p>先激活同色机关，再让桥顺时针旋转90度，建立颜色识别与空间重组。</p></article><article class="detail-panel"><h3>藤蔓与红宝石藤蔓</h3><p>愤怒状态使用火球；高级版本必须精准命中隐藏弱点，而非直接烧毁。</p></article><article class="detail-panel"><h3>隐藏平台与冰冻</h3><p>冷静状态显影并互动冷静标签物件，冰弹可冻结地刺、感应石与移动机关。</p></article><article class="detail-panel"><h3>魔法屏障</h3><p>收集红蓝魔法石后移动屏障，使阻挡物转化为可通行道路。</p></article><article class="detail-panel"><h3>组合跳跃</h3><p>旋转、往返与感应石叠加，形成从单机制到多步连续操作的难度曲线。</p></article><article class="detail-panel"><h3>敌人组合</h3><p>剑盾骑士、手枪/霰弹/步枪兵与会瞬移召唤的魔法师，迫使玩家切换状态和目标优先级。</p></article></div></section>
+<section class="detail-section" id="scope"><div class="detail-index">07 · SCOPE & TRADE-OFFS</div><h2>已设计但未实现</h2><p>文档明确记录了制作边界：闪避反击、韧性、处决系统、更多冰冻交互、集群AI、更复杂的Boss行为树以及分支叙事均完成概念设计，但出于开发时间与实现成本没有进入当前白盒版本。</p><div class="metric-strip"><span>保留：双情绪核心循环</span><span>保留：线性箱庭白盒</span><span>保留：战斗×解谜交汇</span><span>延后：高级战斗系统</span><span>延后：分支叙事</span></div></section>
+</main>
+<div class="back-strip">
+<a href="index.html#projects">← 返回核心项目</a>
+</div>
+<script src="fx.js" defer>
+</script>
+<script src="nav-boost.js" defer>
+</script>
+</body>
+</html>
