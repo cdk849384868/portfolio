@@ -1,6 +1,5 @@
 # Jeremy Chen Portfolio - Editor Style
 
-Static GitHub Pages portfolio using an authorized adaptation of the interaction structure from `shikamaru0922/HxH_portfolio`.
 
 ## Upload
 
