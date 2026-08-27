@@ -2029,7 +2029,12 @@ section[id]{position:relative}.section-label{display:inline-flex;align-items:cen
 .games-card>div:last-child{border-bottom:0;padding-bottom:0}
 .games-card h3{margin:0;color:#b7ff42;font-size:15px}
 .games-card p{margin:0;color:#bdcec6;line-height:1.8}
+.games-card p strong{color:#e8fff4;font-weight:600}
 .games-note{font-size:12px;color:#708a7d;margin-top:14px}
 .profile-actions{display:flex;gap:12px;justify-content:center;margin:10px 0 30px}
+.career-section .career-layout{margin-top:42px}
+.career-section .profile-section{padding:0;margin-bottom:48px}
+.career-section .games-section{padding:0;margin-top:10px}
+.career-section .profile-side{top:120px}
 @media(max-width:900px){.profile-shell{width:min(100% - 30px,720px);padding-top:115px}.profile-hero,.profile-layout{grid-template-columns:1fr}.profile-hero{gap:26px}.profile-side{position:static}.resume-card-head{flex-direction:column;gap:8px}.games-card>div{grid-template-columns:1fr;gap:7px}.profile-hero h1{font-size:60px}}
 @media(max-width:560px){.profile-shell{width:min(100% - 22px,520px)}.resume-card,.games-card{padding:24px 20px}.resume-details div{grid-template-columns:1fr;gap:3px}.profile-hero h1{font-size:48px}.profile-section-head h2{font-size:21px}}
